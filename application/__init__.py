@@ -6,7 +6,6 @@ from flask_redis import FlaskRedis
 db = SQLAlchemy()
 r = FlaskRedis()
 
-
 def init_app():
     """Initialize the core application."""
     app = Flask(__name__, instance_relative_config=False)

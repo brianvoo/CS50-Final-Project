@@ -13,5 +13,8 @@ home_bp = Blueprint(
 def home():
     """Homepage."""
     return render_template(
-        'home.jinja2'
+        'home.jinja2',
+        title="Homepage",
+        description="Track your projects!",
+        template="home-template"
     )

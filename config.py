@@ -10,7 +10,7 @@ class Config:
     """Set Flask config variables."""
 
     FLASK_ENV = 'development'
-    TESTING = True
+    TESTING = False
     SECRET_KEY = environ.get('SECRET_KEY')
     STATIC_FOLDER = 'static'
     TEMPLATES_FOLDER = 'templates'

@@ -9,9 +9,11 @@ projects_bp = Blueprint(
     static_folder='static'
 )
 
-@projects_bp.route('/', methods=['GET', 'POST'])
+@projects_bp.route('/projects', methods=['GET', 'POST'])
 def projects():
     """Projects page."""
     return render_template(
-        'projects.jinja2'
+        'projects.jinja2',
+        title="Project page.",
+        description="Your project."
     )
