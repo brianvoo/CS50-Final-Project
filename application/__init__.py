@@ -19,9 +19,12 @@ def init_app():
         # Include our Routes
         from .home import routes
         from .projects import routes
+        from .faq import routes
 
         # Register Blueprints
         app.register_blueprint(home.routes.home_bp)
         app.register_blueprint(projects.routes.projects_bp)
+        app.register_blueprint(faq.routes.faq_bp)
+        # app.register_blueprint(page.routes.page_bp)
 
         return app

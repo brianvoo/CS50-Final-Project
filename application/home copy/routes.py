@@ -3,17 +3,17 @@ from flask import current_app as app
 
 
 # Blueprint Configuration
-home_bp = Blueprint(
-    'home_bp', __name__,
+page_bp = Blueprint(
+    'page_bp', __name__,
     template_folder='templates',
     static_folder='static'
 )
 
-@home_bp.route('/', methods=['GET', 'POST'])
+@page_bp.route('/page', methods=['GET', 'POST'])
 def home():
     """Homepage."""
     return render_template(
-        'home.jinja2',
-        title="Homepage",
-        description="Track your projects!"
+        'page.jinja2',
+        title="Page",
+        description="Page description"
     )
