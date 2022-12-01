@@ -20,11 +20,14 @@ def init_app():
         from .home import routes
         from .projects import routes
         from .faq import routes
+        from .about import routes
+        from .contact import routes
 
         # Register Blueprints
         app.register_blueprint(home.routes.home_bp)
         app.register_blueprint(projects.routes.projects_bp)
         app.register_blueprint(faq.routes.faq_bp)
-        # app.register_blueprint(page.routes.page_bp)
+        app.register_blueprint(about.routes.about_bp)
+        app.register_blueprint(contact.routes.contact_bp)
 
         return app
