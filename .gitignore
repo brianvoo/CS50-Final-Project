@@ -1,5 +1,5 @@
 # Templates
-#new-page
+application/new-page/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
