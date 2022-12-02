@@ -14,6 +14,6 @@ def home():
     """Homepage."""
     return render_template(
         'faq.jinja2',
-        title="FAQ",
+        title="Frequently Asked Questions (FAQ)",
         description="FAQs"
     )
