@@ -23,14 +23,14 @@ def init_app():
     
 
     with app.app_context():
-        # db.create_all()
-        
         # Include Routes
         from .home import routes
         from .projects import routes
         from .faq import routes
         from .about import routes
         from .contact import routes
+
+        # db.create_all()
 
         # Register Blueprints
         app.register_blueprint(home.routes.home_bp)
