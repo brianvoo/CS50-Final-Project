@@ -1,5 +1,4 @@
 from flask import Blueprint, render_template, redirect, url_for
-from flask import current_app as app
 from ..forms import ContactForm
 
 # Blueprint Configuration
