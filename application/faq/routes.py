@@ -1,6 +1,4 @@
 from flask import Blueprint, render_template
-from flask import current_app as app
-
 
 # Blueprint Configuration
 faq_bp = Blueprint(

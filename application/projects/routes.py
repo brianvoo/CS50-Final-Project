@@ -1,6 +1,5 @@
 from flask import Blueprint, render_template
-from flask import current_app as app
-
+from flask_login import login_required
 
 # Blueprint Configuration
 projects_bp = Blueprint(
@@ -10,6 +9,7 @@ projects_bp = Blueprint(
 )
 
 @projects_bp.route('/projects', methods=['GET', 'POST'])
+@login_required
 def projects():
     """Projects page."""
     return render_template(
